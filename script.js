@@ -44,3 +44,12 @@ function reverseArray(arr) {
     return reversed;
 }
 console.log(reverseArray(["M", "R", "A"])); // Will Output ["A", "R", "M"]
+function reverseArrayInPlace(arr) {
+    for (let i = 0; i < Math.floor(arr.length / 2); i++) {
+        [arr[i], arr[arr.length - 1 - i]] = [arr[arr.length - 1 - i], arr[i]];
+    }
+}
+let arrayValue = [10, 20, 30, 40, 50];
+reverseArrayInPlace(arrayValue);
+console.log(arrayValue);
+// Output will be [50, 40, 30, 20, 10]
