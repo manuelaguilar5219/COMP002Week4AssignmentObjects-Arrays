@@ -14,7 +14,14 @@ console.log(range(5, 20)); // Wil output [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
 // these numbers. Run the example program and see whether it does indeed return 55.
 // Example output:
 // console.log(sum(range(1, 10))); // returns 55
-
+function sum(numbers) {
+    let total = 0; //Initialize total to zero
+    for (let i = 0; i < numbers.length; i++) {
+        total += numbers[i];
+    }
+    return total; // Return the accumulated sum
+}
+console.log(sum(range(5, 20))); // Will Output 200
 // 3. Arrays have a reverse method that changes the array by inverting the order in which
 // its elements appear. For this exercise, write two functions, reverseArray and
 // reverseArrayInPlace. The first, reverseArray, takes an array as an argument and
