@@ -22,6 +22,7 @@ function sum(numbers) {
     return total; // Return the accumulated sum
 }
 console.log(sum(range(5, 20))); // Will Output 200
+console.log(sum(range(1, 10))); // The example does indeed return 55
 // 3. Arrays have a reverse method that changes the array by inverting the order in which
 // its elements appear. For this exercise, write two functions, reverseArray and
 // reverseArrayInPlace. The first, reverseArray, takes an array as an argument and
