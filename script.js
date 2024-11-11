@@ -36,3 +36,11 @@ console.log(sum(range(1, 10))); // The example does indeed return 55
 // let arrayValue = [1, 2, 3, 4, 5];
 // reverseArrayInPlace(arrayValue);
 // console.log(arrayValue); // outputs [5, 4, 3, 2, 1]
+function reverseArray(arr) {
+    let reversed = [];
+    for (let i = arr.length - 1; i >= 0; i--) {
+        reversed.push(arr[i]);
+    }
+    return reversed;
+}
+console.log(reverseArray(["M", "R", "A"])); // Will Output ["A", "R", "M"]
